@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav .menu {
+    display: flex;
+    align-items: center;
+    font-size: 0;
+}
+
+nav .menu li a {
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+nav .btn {
+    background: aqua;
+    margin-left: 20px;
+    border-radius: 99px;
+}
+
+nav .btn a {
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+nav .icon {
+    display: none;
+}
+nav .icon i {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        max-width: 95%;
+    }
+    nav .menu {
+        /* display: none; */
+        align-items: flex-start;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: -300px;
+        width: 300px;
+        height: 100vh;
+        background: #000;
+        padding-top: 20px;
+        z-index: 1;
+        transition: 0.3s linear;
+        transition-property: opacity, visibility, left;
+    }
+
+    nav .menu,
+    nav .overlay {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav .menu li {
+        padding-top: 20px;
+    }
+
+    nav .menu li a {
+        color: white;
+    }
+
+    nav .overlay {
+        position: absolute;
+        inset: 0;
+        background: #00000082;
+    }
+
+    nav .icon {
+        display: block;
+        margin-left: 20px;
+        font-size: 20px;
+    }
+
+    nav input:checked + .menu,
+    nav input:checked ~ label .overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    nav input:checked + .menu {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        max-width: 95%;
+    }
+    nav .btn {
+        opacity: 0;
+        visibility: hidden;
+    }
+}

@@ -1,0 +1,9 @@
+/* 
+Shape css
+*/
+
+.box {
+    width: 0;
+    border: 10px solid;
+    border-color: blue white white white;
+}

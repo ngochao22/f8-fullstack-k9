@@ -1,0 +1,192 @@
+@font-face {
+    font-family: Lato;
+    src: url("../fonts/Lato/Lato-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Lobster;
+    src: url("../fonts/Lobster/Lobster-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: Lato;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.container h2 {
+    font-family: Lobster;
+    color: #333;
+    font-size: 34px;
+}
+
+.container p {
+    color: #c0bebe;
+}
+
+.container p span {
+    color: #f49f99;
+}
+
+.container .form {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.form .input {
+    width: 100%;
+    border: 1px solid #c0bebe;
+}
+
+.input label i {
+    background: #c0bebe;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.input input,
+.input select {
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    width: 440px;
+}
+
+.input input::placeholder {
+    color: #c0bebe;
+}
+
+.input ~ i {
+    position: absolute;
+    right: 10px;
+    top: 19px;
+    color: #c0bebe;
+    font-size: 8px;
+}
+
+.input ~ .close {
+    display: none;
+}
+
+.input select,
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.input textarea {
+    padding-left: 46px;
+    width: 451px;
+    outline: none;
+    border: none;
+}
+
+.input .textarea {
+    position: absolute;
+    height: 140px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.wrapper label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #c0bebe;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid #c0bebe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+input[type="checkbox"]::after {
+    content: "v";
+    font-weight: 800;
+    font-size: 15px;
+    color: #504e4e;
+    display: none;
+}
+
+input[type="checkbox"]:checked::after {
+    display: block;
+}
+
+button {
+    color: white;
+    background: #eb2f21;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.notification::after {
+    content: "Enter your name";
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    background: rgba(51, 51, 51, 0.9);
+    top: -50px;
+    left: 20px;
+    display: none;
+}
+
+.notification::before {
+    content: "";
+    position: absolute;
+    border: 8px solid;
+    border-color: rgba(51, 51, 51, 0.9) transparent transparent transparent;
+    width: 0;
+    top: -15px;
+    left: 35px;
+    display: none;
+}
+
+.input:hover i {
+    background: #000;
+}
+
+.input:hover ~ .close {
+    display: block;
+}
+
+.input:hover ~ .open {
+    display: none;
+}
+
+.input:hover {
+    border: 1px solid #000;
+}
+
+.form input:focus + .notification::after,
+.form input:focus + .notification::before,
+.form textarea:focus + .notification::before,
+.form textarea:focus + .notification::after {
+    display: block;
+}

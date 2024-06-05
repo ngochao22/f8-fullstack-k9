@@ -1,0 +1,33 @@
+blockquote {
+    padding: 60px 40px;
+    position: relative;
+}
+
+blockquote:before {
+    content: "\201C";
+    background: #ddd;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: 10px;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 60px;
+}
+blockquote:after {
+    content: "\201D";
+    background: #ddd;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 60px;
+}

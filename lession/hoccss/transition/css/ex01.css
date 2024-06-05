@@ -1,0 +1,47 @@
+/* 
+***** Thuộc tính transition: Tạo di chuyển mượt mà với các thuộc tính css (Chỉ áp dụng với thuộc tính có giá trị là số)
+- transition-property: Khai báo các thuộc tính css muốn chuyển động
+    + all
+    + tên thuộc tính css
+==> Mỗi thuộc tính các nhau bới dấu ,
+
+- transition-duration: Thời gian hoàn thành chuyển động(s, ms)
+
+- transition-delay: Thời gian trễ trước khi chuyển động xảy ra
+
+- transition-timing-function: Thiết lập tốc độ di chuyển 
+    + ease: (Mặc định): Khởi động chậm - sau đó nhanh dần - kết thúc chậm
+    + ease-in: khởi động chậm - sau đó nhanh dần cho đến kết thúc
+    + ease-out: khởi đầu nhanh - sau đó chậm dần đến lúc kết thúc
+    + ease-in-out: Khởi đầu chậm - sau nhanh dần - kết thúc chậm (Khác chỉ số)
+    + linear: chuyển động đều
+    + cubic-bezier(p1, p2, p3, p4)
+
+- transition: property duration delay timing
+
+
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    border: 1px solid red;
+}
+
+.box h1 {
+    /* transition-property: padding-left background;
+    transition-duration: 2s;
+    transition-timing-function: ease-out; */
+    transition: 2s linear;
+    transition-property: padding-left, background;
+}
+
+.box:hover h1 {
+    padding-left: 100px;
+    background: green;
+    transition-delay: 1s;
+}

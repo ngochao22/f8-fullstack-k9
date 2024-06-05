@@ -1,0 +1,24 @@
+.container {
+    background-image: url("../asset/img/image.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container .child {
+    position: absolute;
+    width: 470px;
+    height: 259px;
+    background: rgba(154, 148, 184, 0.6);
+    left: 40%;
+    bottom: 30%;
+    border-radius: 8px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.container .child span {
+    text-decoration: underline;
+}

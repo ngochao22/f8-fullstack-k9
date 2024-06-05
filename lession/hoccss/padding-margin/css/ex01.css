@@ -1,0 +1,29 @@
+/* 
+***** Thuộc tính padding: Đệm khoảng cách giữa border và nôi dung
+
+Note: padding khi dùng đơn vị %, padding theo width của thẻ cha
+
+- Lý do: Tạo ra các box theo tỷ lệ
+
+padding không có giá trị âm
+padding không có giá trị auto
+padding-top và padding-bottom không hoạt động với thẻ inline
+*/
+
+.box {
+    border: 1px solid red;
+}
+
+.link {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+    background: green;
+    border-radius: 99px;
+    display: inline-block;
+}
+
+.btn-wrap {
+    text-align: center;
+    padding: 10px;
+}

@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+@font-face {
+    font-family: Asap;
+    src: url("../assets/fonts/Asap/static/Asap-Italic.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: Asap, sans-serif;
+}
+
+.container {
+    height: 300px;
+    position: relative;
+    background-image: url("../assets/images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container .heading {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    display: flex;
+}
+
+.container .heading img {
+    width: 200px;
+    background-color: white;
+    padding: 30px 40px 0 40px;
+    border-radius: 8px 8px 0 0;
+}
+
+.container .heading .heading-content {
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+.heading-content h1 {
+    color: white;
+    padding-bottom: 10px;
+}
+
+.heading-content span {
+    color: white;
+}
+
+.heading-content > span {
+    text-transform: uppercase;
+}
+
+.heading-content > span span {
+    padding-right: 20px;
+    font-weight: 700;
+}
+
+.container .menu {
+    position: absolute;
+    bottom: -30px;
+    right: 100px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    padding: 0 10px;
+}
+
+.menu li a {
+    color: black;
+}
+
+.menu li a:hover {
+    padding-bottom: 10px;
+    border-bottom: 2px solid red;
+}

@@ -1,0 +1,41 @@
+footer {
+    background: #334455;
+    padding: 20px 40px;
+}
+
+h2,
+p {
+    color: white;
+}
+
+h2 span {
+    color: #fba00f;
+}
+
+input {
+    padding: 8px 4px;
+    border-radius: 4px;
+    outline: none;
+}
+
+input::placeholder {
+    padding: 4px 10px;
+}
+
+button {
+    padding: 8px 16px;
+    background: #f8db35;
+}
+
+footer:hover input::placeholder {
+    color: #fba00f;
+}
+
+footer:hover input {
+    background: #ddd;
+}
+
+footer:hover button {
+    background: #fba00f;
+    color: #fff;
+}

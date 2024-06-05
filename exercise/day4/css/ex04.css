@@ -1,0 +1,10 @@
+h2 + p span {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.border-wrap {
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 20px;
+}

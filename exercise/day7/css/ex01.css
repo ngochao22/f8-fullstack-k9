@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/Open_Sans/static/OpenSans-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.menu {
+    width: 80vw;
+    margin: 30px auto;
+    font-size: 0;
+    border: 1px solid #666;
+}
+
+.menu > li {
+    display: inline-block;
+    list-style: none;
+    border-right: 1px solid #666;
+    position: relative;
+}
+
+.menu > li a {
+    display: inline-block;
+    color: #666;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 20px;
+    margin: 4px;
+}
+
+.menu > li > a:hover {
+    color: white;
+    background: #2da5da;
+}
+
+.menu > li > a:hover + .sub-menu {
+    display: block;
+}
+
+.menu > li > a span {
+    padding: 0 6px;
+}
+
+.sub-menu {
+    position: absolute;
+    width: 200px;
+    background: white;
+    box-shadow: 0 0 10px 0.1px #666;
+    top: 80px;
+}
+
+.sub-menu::before {
+    content: "";
+    border: 8px solid;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    top: -14px;
+    left: 20px;
+}
+
+.sub-menu {
+    display: none;
+}
+
+.menu > li:last-child {
+    float: right;
+    border-right: none;
+    border-left: 1px solid #666;
+}

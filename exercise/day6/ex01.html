@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form</title>
+        <link rel="stylesheet" href="./css/ex01.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <h2>Hey there</h2>
+            <p>
+                <span>We'd like to hear from you.</span>Send us your message orr
+                just say hy with our contact form or directly via phone, we love
+                to chat.
+            </p>
+            <form>
+                <div class="form">
+                    <div class="input">
+                        <label for="lbl-name"
+                            ><i class="fa-solid fa-user-tie"></i
+                        ></label>
+                        <input
+                            type="text"
+                            placeholder="Your name"
+                            name="name"
+                            id="lbl-name"
+                        />
+                        <div class="notification"></div>
+                    </div>
+                    <i class="fa-solid fa-star fa-2xs open"></i>
+                    <i class="fa-solid fa-xmark fa-2xs close"></i>
+                </div>
+
+                <div class="form">
+                    <div class="input">
+                        <label for="lbl-email"
+                            ><i class="fa-solid fa-envelope"></i
+                        ></label>
+                        <input
+                            type="email"
+                            placeholder="Your@domain.com"
+                            name="email"
+                            id="lbl-email"
+                        />
+                        <div class="notification"></div>
+                    </div>
+                    <i class="fa-solid fa-star fa-2xs open"></i>
+                    <i class="fa-solid fa-xmark fa-2xs close"></i>
+                </div>
+                <div class="form">
+                    <div class="input">
+                        <label for="lbl-phone"
+                            ><i class="fa-solid fa-phone"></i>
+                        </label>
+                        <input
+                            type="number"
+                            placeholder="+44 00 123"
+                            name="phone"
+                            id="lbl-phone"
+                        />
+                        <div class="notification"></div>
+                    </div>
+                </div>
+                <div class="form" style="position: relative">
+                    <div class="input">
+                        <label for="lbl-subject"
+                            ><i class="fa-solid fa-book"></i
+                        ></label>
+                        <select name="subject" id="lbl-subject">
+                            <option value="0" selected>Subject</option>
+                            <option value="1">value 1</option>
+                            <option value="2">value 2</option>
+                            <option value="3">value 3</option>
+                        </select>
+                    </div>
+                    <i class="fa-solid fa-up-down fa-2xs"></i>
+                </div>
+                <div class="form">
+                    <div class="input">
+                        <label for="lbl-message"
+                            ><i class="fa-solid fa-user-tie textarea"></i
+                        ></label>
+                        <textarea
+                            name="message"
+                            id="lbl-message"
+                            cols="30"
+                            rows="10"
+                            placeholder="Message"
+                            style="resize: none"
+                        ></textarea>
+                        <div class="notification"></div>
+                    </div>
+                    <i class="fa-solid fa-star fa-2xs open"></i>
+                    <i class="fa-solid fa-xmark fa-2xs close"></i>
+                </div>
+                <div class="wrapper">
+                    <label>
+                        <input type="checkbox" name="check" value="website" />
+                        Send me a copy of this message
+                    </label>
+                    <button type="submit">SEND</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

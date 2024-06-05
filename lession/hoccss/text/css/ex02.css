@@ -1,0 +1,79 @@
+/* 
+***** Thuộc tính font-family: Thay đổi font chữ cho văn bản *****
+- Cú pháp: font-family: tenFont1, tenFont2,...
+
+Lưu ý: Nếu tên font có khoảng trắng thì chúng ta sẽ thêm vào cặp "" hoặc ''
+- Trong thuộc tính font-family sẽ có các giá trị đại diện cho họ font
++ serif: Họ có chân
++ sans-serif: họ không chân
+
+-------------------------------------------------------------------------
+
+***** Thuộc tính text-decoration: Thay đổi gạch ngang ở văn bản *****
+- none --> không có gạch ngang
+- underline --> Gạch dưới
+- overline --> Gạch trên
+- line-through --> Gạch giữa
+
+-------------------------------------------------------------------------
+
+***** Thuộc tính text-transform: Biến đổi kiểu chữ (chữ hoa, chữ thường)
+- none --> Giữ nguyên bản gốc
+- uppercase --> Chữ hoa
+- lowercase --> Chữ thường
+- capitalize --> ký tự đầu của mỗi từ viết hoa
+
+-------------------------------------------------------------------------
+
+***** Thuộc tính letter-spacing: khoảng cách mỗi ký tự *****
+
+-------------------------------------------------------------------------
+
+***** Thuộc tính word-spacing: khoảng cách giữa mỗi từ *****
+
+word-wrap: break-word;
+
+-------------------------------------------------------------------------
+
+***** Thuộc tính text-align: căn chỉnh văn bản theo chiều ngang
+- left: căn trái
+- center: căn giữa
+- right: căn phải
+- justify: căn đều hai bên
+*/
+
+@font-face {
+    font-family: "SVN Fontbox";
+    src: url("../fonts/SVN-Fontbox-Boathouse-Filled.otf");
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato-LightItalic.ttf);
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+}

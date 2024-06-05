@@ -1,0 +1,48 @@
+body {
+    font-family: sans-serif;
+}
+
+section h2,
+section h2 ~ p {
+    text-align: center;
+}
+
+section div {
+    display: flex;
+    justify-content: center;
+}
+
+section div article {
+    width: 320px;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 80px 20px;
+    text-align: center;
+}
+
+section article i {
+    margin-top: 30px;
+    padding: 40px 30px;
+    border-radius: 50%;
+    border: 2px solid #ffd43b;
+}
+
+section article h3 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 35px;
+}
+
+section article p {
+    font-weight: 200;
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+section article button {
+    color: #fff;
+    padding: 12px 24px;
+    background-color: #ffd43b;
+    border: none;
+    margin: 30px 0;
+}

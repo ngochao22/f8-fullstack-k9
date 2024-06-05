@@ -1,0 +1,16 @@
+body {
+    background: green;
+}
+
+@media screen and (max-width: 1199px) {
+    body {
+        background: red;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        background: blueviolet;
+    }
+}

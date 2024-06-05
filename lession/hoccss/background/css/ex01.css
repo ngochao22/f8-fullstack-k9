@@ -1,0 +1,60 @@
+/* 
+***** Background CSS *****
+
+- Background-color
+
+------------------------------------------------------
+
+- Background-image
+
+------------------------------------------------------
+
+- Background-repeat
+    + repeat --> mặc định
+    + repeat-x --> lặp theo trục x
+    + repeat-y --> lặp theo trục y
+    + no-repeat --> không lặp
+
+-----------------------------------------------------
+
+- Background-position: Thay đổi vị trị của ảnh nền
+    + Trục x: left, center, right, đơn vị tuyệt đối, tương đối(%)
+    + Trục y: top, center, bottom, đơn vị tuyệt đối, tương đối(%)
+
+-----------------------------------------------------
+
+- Background-size: Thay đổi kích thước của ảnh nền
+    + cover: Phủ kín khung hiển thị
+    + contain: 
+
+-----------------------------------------------------
+
+- Background-attachment --> Cố định hay không background kéo
+                             thanh cuộn trình duyệt
+
+-----------------------------------------------------
+
+- Background --> Thuộc tính gộp các thuộc tính trên
+- Cú pháp: 
+    + background: color image repeat position / size attachment
+*/
+/* body {
+    height: 500px;
+    background-color: aqua;
+    background-image: url("https://picsum.photos/id/1/200/300");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+} */
+
+.box {
+    height: 800px;
+    /* 
+    background-color: aqua;
+    background-image: url("https://picsum.photos/id/1/200/300");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain; */
+    background: aqua url("https://picsum.photos/id/1/200/300") no-repeat fixed 0
+        0 / 500px;
+}

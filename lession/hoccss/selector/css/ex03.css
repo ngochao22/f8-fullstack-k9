@@ -1,0 +1,48 @@
+/*
+1.tenThe[tenThuocTinh] --> chọn thẻ html có thuộc tính
+2.tenThe[tenThuocTinh="giaTri"] --> chọn thẻ html có thuộc tính = giá trị
+3.tenThe[tenThuocTinh^="giaTri"] --> chọn thẻ html có thuộc tính bắt đầu bằng giá trị
+4.tenThe[tenThuocTinh$="giaTri"] --> Chọn thẻ html có thuộc tính kết thúc bằng giá trị
+5.tenThe[tenThuocTinh*="giaTri"] --> chọn thẻ có giá trị nằm trong thuộc tính
+6.tenThe[tenThuocTinh~="giaTri"] --> Chọn thẻ có giá trị là một từ trong thuộc tính
+*/
+/* ul li a[target] {
+    color: red;
+} */
+
+/* ul li a[href="https://fullstack.edu.vn"]
+{
+    color: red;
+} */
+
+/* ul li a[href^="https://fullstack.edu.vn"]
+{
+    color: red;
+} */
+
+/* ul li a[href$=".vn"] {
+    color: red;
+} */
+
+/* ul li a[href*="fullstack.edu.vn"] {
+    color: red;
+} */
+
+/* ul li a[title~="hello"] {
+    color: red;
+} */
+
+input[id="red"]:checked ~ p,
+input[id="red"]:checked ~ label[for="red"] {
+    color: red;
+}
+
+input[id="green"]:checked ~ p,
+input[id="green"]:checked ~ label[for="green"] {
+    color: green;
+}
+
+input[id="blue"]:checked ~ p,
+input[id="blue"]:checked ~ label[for="blue"] {
+    color: blue;
+}

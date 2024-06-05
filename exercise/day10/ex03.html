@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bài 3</title>
+        <link rel="stylesheet" href="./assets/css/ex03.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <h1>Drop Us a Line</h1>
+        <p>
+            Reach out to us from our contact form and we will get back to you
+            shortly
+        </p>
+        <form>
+            <div class="row">
+                <div class="row-1">
+                    <div>
+                        <input
+                            type="text"
+                            placeholder="First Name *"
+                            name="first-name"
+                        />
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Email *" name="email" />
+                    </div>
+                </div>
+                <div class="row-2">
+                    <div>
+                        <input
+                            type="text"
+                            placeholder="Last Name *"
+                            name="last-name"
+                        />
+                    </div>
+                    <div>
+                        <select name="list">
+                            <option value="0">Select a department</option>
+                            <option value="1">Sales</option>
+                            <option value="2">Marketing</option>
+                            <option value="3">Customer Support</option>
+                        </select>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+            <textarea name="message" placeholder="Message *"></textarea>
+            <input type="submit" value="Send Message" name="btn_submit" />
+        </form>
+    </body>
+</html>

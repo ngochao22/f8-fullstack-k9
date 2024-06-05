@@ -1,0 +1,37 @@
+//Nested Selectors
+/*
+Comment CSS
+*/
+@import "partials/variables";
+.header {
+    padding: 30px 0;
+    background: $primary-color;
+    color: $secondaryColor;
+    .logo {
+        $opacityImg: 0.5;
+        float: left;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+// $size: 20;
+// .box {
+//     font-size: $size * 1%;
+// }
+
+// $property: background-color;
+// .box {
+//     #{$property}: red;
+// }
+
+$selector: '.column-medium';
+$number: 5;
+// #{$selector}-#{$number} {
+//     color: red;
+// }
+#{$selector + "-" + $number} {
+    color: red;
+}

@@ -1,0 +1,12 @@
+:root {
+    --bg-color-header: rgba(34, 34, 34, 0.9);
+    --bg-color-footer: #222;
+    --color-text-primary: #ffa500;
+    --color-text-second: #fff;
+    --color-text-third: #333;
+    --color-text-four: #555;
+    --color-text-five: #efefef;
+    --color-text-btn: #111;
+    --color-text-header: #aaa;
+    --bg-color-btn-hover: rgba(114, 74, 0, 0.2);
+}

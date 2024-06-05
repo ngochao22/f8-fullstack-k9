@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    margin: 30px auto;
+    position: relative;
+    display: block;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background: green;
+    padding: 20px 40px;
+    overflow: hidden;
+}
+
+.button span {
+    position: relative;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    inset: 0 100% 0 0;
+    background: red;
+    transition: right 0.3s linear;
+}
+
+.btn:hover::before {
+    right: 0;
+}
