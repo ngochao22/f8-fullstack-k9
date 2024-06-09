@@ -1,0 +1,32 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#box {
+  padding: 30px 0;
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+#box .container {
+  max-width: 1400px;
+  margin: 30px auto;
+}
+
+.products {
+  background: red;
+}
+
+.posts {
+  box-shadow: 5px 5px 5px #ccc;
+}
+
+.menu li a {
+  color: red;
+}
+.menu li a.active, .menu li a:hover {
+  color: green;
+}
+
+/*# sourceMappingURL=ex02.css.map */
