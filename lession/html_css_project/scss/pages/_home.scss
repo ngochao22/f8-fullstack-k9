@@ -1,0 +1,131 @@
+@import "../partials/variables";
+.hero {
+    position: relative;
+    height: 720px;
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &-content {
+        max-width: 50%;
+        padding-top: 217px;
+
+        &-title {
+            color: $color-primary;
+            font-size: 3.7rem;
+            font-weight: 800;
+            line-height: 131.523%;
+        }
+
+        &-sub-title {
+            color: $color-primary;
+            width: 70%;
+            font-size: 4.3rem;
+            font-weight: 800;
+            line-height: normal;
+            text-transform: uppercase;
+            padding-top: 10px;
+        }
+
+        &-desc {
+            color: $color-primary;
+            width: 73%;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 127.604%;
+            padding-top: 27px;
+        }
+    }
+
+    &-image {
+        width: 50%;
+        height: 700px;
+        position: absolute;
+        right: 0;
+        background-color: $bg-color-primary;
+        border-radius: 18px 0 0 18px;
+        z-index: -1;
+
+        &-text {
+            color: #2260005e;
+            font-size: 16.6rem;
+            font-weight: 800;
+            line-height: 100%;
+            position: absolute;
+            text-transform: uppercase;
+            rotate: 90deg;
+            right: 0;
+            top: 0;
+            translate: 20% 75%;
+        }
+
+        .image {
+            width: 85%;
+            height: 85%;
+            translate: -25% 10%;
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .hero {
+        &-image {
+            &-text {
+                font-size: 12rem;
+                translate: 20% 160%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .hero {
+        &-image {
+            &-text {
+                font-size: 12rem;
+                translate: 20% 140%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .hero {
+        &-image {
+            &-text {
+                font-size: 10rem;
+                translate: 20% 180%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hero {
+        &-content {
+            padding-top: 20px;
+            &-title {
+                font-size: 3rem;
+            }
+
+            &-sub-title {
+                font-size: 3.6rem;
+            }
+        }
+
+        &-image {
+            &-text {
+                rotate: 0deg;
+                font-size: 6rem;
+                left: 0;
+                bottom: 0;
+                translate: 10% 50%;
+            }
+
+            .image {
+                translate: 1% -20%;
+            }
+        }
+    }
+}

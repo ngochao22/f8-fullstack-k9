@@ -1,0 +1,12 @@
+//Import bằng @use => tự động tạo namespace là tên file
+@use "partials/header";
+@use "partials/footer";
+@use "components/products/header" as product-header; //Đổi namespace
+.product {
+    background: header.$bgColor;
+    color: product-header.$bgColor;
+}
+
+.posts {
+    color: footer.$bgColor;
+}

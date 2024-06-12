@@ -1,0 +1,138 @@
+//Style header của dự án
+@import "../partials/variables";
+
+.header {
+    box-shadow: 0px 1.667px 8.333px 0px rgba(0, 0, 0, 0.15);
+    padding: 7px 0;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    .header-logo {
+        margin-right: auto;
+    }
+
+    .navbar .menu {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        .header-logo {
+            display: none;
+        }
+        a {
+            position: relative;
+            color: $color-primary;
+            font-size: 1.7rem;
+            font-weight: 600;
+            line-height: 130%;
+            text-transform: capitalize;
+            padding: 35px 0;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 2px;
+                left: 0;
+                bottom: 0;
+                background-color: $color-secondary;
+                border-radius: 6px;
+                transition: width 0.3s ease;
+            }
+
+            &:hover,
+            &.active {
+                color: $color-secondary;
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .actions {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        padding-left: 50px;
+
+        &-cart {
+            position: relative;
+        }
+
+        &-cart::before {
+            content: "3";
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            top: -8px;
+            right: -4px;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .btn-toggle-menu {
+            font-size: 2rem;
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header .container {
+        .navbar .menu {
+            position: fixed;
+            flex-direction: column;
+            left: -250px;
+            top: 0;
+            width: 250px;
+            height: 100vh;
+            background: white;
+            z-index: 99;
+            align-items: flex-start;
+            padding: 50px 20px;
+            transition: left 0.5s ease;
+
+            .header-logo {
+                display: block;
+            }
+
+            a::after {
+                display: none;
+            }
+        }
+        .actions .btn-toggle-menu {
+            display: block;
+        }
+    }
+
+    .header .overlay {
+        position: fixed;
+        inset: 0;
+        background: #00000066;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s linear;
+        transition-property: opacity, visibility;
+        z-index: 2;
+    }
+
+    input:checked + .header {
+        .overlay {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .navbar .menu {
+            left: 0;
+        }
+    }
+}
