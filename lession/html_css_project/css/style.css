@@ -657,6 +657,12 @@ body {
   margin-left: auto;
   margin-right: auto;
   border: 0;
+  cursor: pointer;
+}
+.products .container .products-list .product-item .btn:hover {
+  background: transparent;
+  border: 1px solid #46b20f;
+  color: #46b20f;
 }
 .products .container .products-list .product-center::before {
   background-color: #c5ffa8;
