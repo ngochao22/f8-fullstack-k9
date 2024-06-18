@@ -1,0 +1,137 @@
+@import "../partials/variables";
+.chopstick {
+    padding-top: 100px;
+    position: relative;
+    .title {
+        color: $color-primary;
+        font-size: 3.1rem;
+        text-align: center;
+        font-weight: 800;
+        line-height: 1.31;
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .sub-title {
+        width: 60%;
+        color: $color-primary;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.27;
+        text-align: center;
+        margin: 0 auto;
+        padding: 24px 0 50px;
+    }
+
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 22px;
+
+        .chopstick-item {
+            width: 30%;
+            height: 360px;
+            background-color: white;
+            border-radius: 8.333px;
+            cursor: pointer;
+
+            .image {
+                width: 100%;
+                border-radius: 8.333px;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    border-radius: 8.333px;
+                    transition: scale 0.2s ease;
+                }
+            }
+
+            &:hover {
+                img {
+                    scale: 1.1;
+                }
+            }
+
+            .heading {
+                color: $color-chopstick;
+                font-size: 2rem;
+                font-weight: 600;
+                line-height: 1.33;
+                padding: 24px 0 0 27px;
+            }
+
+            .shadow-text {
+                text-shadow: 0px 3.333px 3.333px rgba(0, 0, 0, 0.25);
+            }
+
+            .desc {
+                color: $color-primary;
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 1.27;
+                padding-left: 27px;
+            }
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        background: #fff0e7;
+        width: 100vw;
+        height: 360px;
+        top: 0;
+        z-index: -1;
+        translate: 0 120%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .chopstick {
+        .title {
+            width: 70%;
+        }
+
+        .sub-title {
+            width: 100%;
+        }
+        &-list {
+            .chopstick-item {
+                width: 45%;
+                height: 400px;
+            }
+
+            .chopstick-item:last-child {
+                height: 320px;
+            }
+        }
+
+        .overlay {
+            height: 550px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .chopstick {
+        &-list {
+            .chopstick-item {
+                width: 100%;
+                height: 440px;
+            }
+
+            .chopstick-item:last-child {
+                height: 440px;
+            }
+        }
+
+        .overlay {
+            inset: 0;
+            height: 100%;
+            top: 0;
+            translate: 0 0;
+            margin-top: 40px;
+        }
+    }
+}

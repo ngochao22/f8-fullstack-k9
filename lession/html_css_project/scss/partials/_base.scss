@@ -1,2 +1,15 @@
 //Định nghĩa các class hay dùng trong dự án
 //Ví dụ: .btn, .btn-sm, .btn-lg, .d-flex, .justify-content-start, justify-content-center, justify-content-end,...
+@import "./variables";
+
+.btn-outline {
+    padding: 11px 21px;
+    background: white;
+    border: 1px solid $color-secondary;
+    border-radius: 6.667px;
+    color: $color-primary;
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: normal;
+    display: inline-block;
+}
