@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .menu {
+                background: #000;
+                max-width: 300px;
+                margin: 30px auto;
+                border-radius: 4px;
+            }
+            li {
+                list-style: none;
+                padding: 12px 0;
+            }
+
+            li a {
+                text-decoration: none;
+                color: #fff;
+                font-size: 20px;
+            }
+
+            .d-none {
+                display: none;
+                position: relative;
+                top: -9999px;
+            }
+
+            .d-block {
+                display: block;
+                position: relative;
+                width: 100%;
+                top: 10px;
+                left: -40px;
+                transition: all 1s linear;
+            }
+
+            .d-flex {
+                display: flex;
+                align-items: center;
+                gap: 200px;
+            }
+
+            .menu-child {
+                background-color: green;
+            }
+
+            .rotate {
+                rotate: 180deg;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Dom Navigation</h1>
+        <!-- <div class="wrapper">
+            <div class="box">
+                <div class="content">
+                    <h2>F8 - Học lập trình không khó</h2>
+                </div>
+            </div>
+        </div>
+        <div class="products">
+            <h2>Item 1</h2>
+            <h2>Item 2</h2>
+            <h2>Item 3</h2>
+            <h2>Item 4</h2>
+        </div> -->
+        <ul class="menu">
+            <li><a href="#">Menu 1</a></li>
+            <li>
+                <div class="d-flex">
+                    <a href="#">Menu 2</a> <span style="color: #fff">▼</span>
+                </div>
+                <ul class="d-none menu-child">
+                    <li><a href="#">Menu 2.1</a></li>
+                    <li><a href="#">Menu 2.2</a></li>
+                    <li><a href="#">Menu 2.3</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="d-flex">
+                    <a href="#">Menu 3</a> <span style="color: #fff">▼</span>
+                </div>
+                <ul class="d-none menu-child">
+                    <li><a href="#">Menu 3.1</a></li>
+                    <li><a href="#">Menu 3.2</a></li>
+                    <li><a href="#">Menu 3.3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Menu 4</a></li>
+        </ul>
+        <script src="./js/ex08.js"></script>
+    </body>
+</html>

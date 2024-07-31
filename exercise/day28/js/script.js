@@ -23,5 +23,6 @@ ul.addEventListener("click", function (e) {
     }
 
     if (e.target.classList.contains("btn-delete")) {
+        
     }
 });
