@@ -1,5 +1,9 @@
 /**
-- previousElementSibling --> Chọn thành phần phía trước(Bên trái)
+Chọn các element cha, con, anh em
+- parentElement --> Chọn thành phần cha gần nhất
+- children --> Chọn tất cả thành phần cấp 1 (Trả về 1 danh sách)
+- nextElementSibling --> Chọn thành phần kế tiếp (Bên phải)
+- previousElementSibling --> Chọn thành phần phía trước (Bên trái)
 - parentNode
 - childNodes
 - nextSibling

@@ -17,6 +17,18 @@ var lengthDots = carouselItem.length;
     }
 })();
 
+carouselItem.forEach(function (item, index) {
+    item.addEventListener("mousemove", function () {
+        this.addEventListener("mousedown", function (e) {
+            var imgNext = e.target.parentElement.nextElementSibling.children;
+            var imgPrev = e.target.parentElement.previousElementSibling;
+            if (imgNext) {
+                console.log(imgNext);
+            }
+        });
+    });
+});
+
 var carouselSpan = document.querySelectorAll(".carousel .carousel-dots span");
 carouselSpan.forEach(function (item, index) {
     item.dataset.index = index;
