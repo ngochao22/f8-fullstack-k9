@@ -103,10 +103,10 @@ function renderCart() {
           <th style="width: 5%;">Xóa</th>
       </tr>`;
     tableCart.innerHTML = thead;
-    carts.forEach((cart) => {
+    carts.forEach((cart, index) => {
         var cartItem = document.createElement("tr");
         var html = `
-          <td>${cart.product_id}</td>
+          <td>${index + 1}</td>
           <td>${cart.name}</td>
           <td>${cart.price}</td>
           <td>
