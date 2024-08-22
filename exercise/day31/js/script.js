@@ -38,14 +38,14 @@ function renderProduct() {
         .map(
             (product, index) =>
                 `<tr class=product-${index + 1}>
-        <td>${product.id}</td>
-        <td>${product.name}</td>
-        <td>${product.price}</td>
-        <td>
-          <input type="number" class="num-product" value="1" style="display: block;width: 96%; margin: 0 auto">
-          <button class="add-cart" style = "width: 100%;">Thêm vào giỏ</button>
-        </td>
-      </tr>`
+                    <td>${product.id}</td>
+                    <td>${product.name}</td>
+                    <td>${product.price}</td>
+                    <td>
+                    <input type="number" class="num-product" value="1" style="display: block;width: 96%; margin: 0 auto">
+                    <button class="add-cart" style = "width: 100%;">Thêm vào giỏ</button>
+                    </td>
+                </tr>`
         )
         .join("");
     bodyProducts.innerHTML = html;
