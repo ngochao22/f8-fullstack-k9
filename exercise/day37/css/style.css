@@ -1,0 +1,32 @@
+.image-wrap {
+    display: flex;
+    align-items: flex-start;
+}
+
+.image-wrap .main-img {
+    border: 6px solid red;
+    width: 500px;
+    height: 300px;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-wrap .main-img .overlay {
+    position: absolute;
+    width: 180px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+    display: none;
+}
+
+.image-wrap .zoom-img {
+    width: 500px;
+    height: 300px;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: none;
+    margin-left: 2px;
+}
